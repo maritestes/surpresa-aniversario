@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarsoversário</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>HAPPY BDAY TARSINHOOOOOOOO!!!!🎂🥳🎉</h1>
+        <p> Bem-vindo a sua surpresa de aniversário!!<br> Fiz a página com muito amor e 
+         carinho para você!!!
+        </p>
+    </header>
+    
+    <div id="mensagem-confetti">
+        <p>💌 Oii Tarsuu, feliz aniver! Sei que não gosta muito dele, mas espero que seja especial, da sua forma,
+        mas especial!!! Saiba que fiz tudo com muito amor e pensando em você! Espero que goste 💗</p>
+        <button onclick="mostrarMensagem()">Clique aqui</button>
+        <canvas id="confetti"></canvas>
+    </div>
+
+    <section class="carrossel">
+        <h2>Alguns momentos especiais com você💗</h2>
+        <div class="carrossel-container">
+            <div class="slides">
+                <img src="img/1.jpg" alt="Foto 1">
+                <img src="img/2.jpg" alt="Foto 2">
+                <img src="img/3.jpg" alt="Foto 3">
+                <img src="img/4.jpg" alt="Foto 4">
+                <img src="img/5.jpg" alt="Foto 5">
+                <img src="img/6.jpg" alt="Foto 6">
+                <img src="img/7.jpg" alt="Foto 7">
+                <img src="img/8.jpg" alt="Foto 8">
+                <img src="img/9.jpg" alt="Foto 9">
+                <img src="img/10.jpg" alt="Foto 10">
+                <img src="img/11.jpg" alt="Foto 11">
+                <img src="img/12.jpg" alt="Foto 12">
+                <img src="img/13.jpg" alt="Foto 13">
+                <img src="img/14.jpg" alt="Foto 14">
+            </div>
+        </div>
+        <button class="prev" onclick="moverSlide(-1)">❮</button>
+        <button class="next" onclick="moverSlide(1)">❯</button>
+    </section>
+
+    <section class="jogo">
+        <h2>Encontre o seu presente 🎁</h2>
+        <p>Vamos descontrair um pouquinho então, a brincadeira é o seguinte:<br>
+        em um desses balões está a outra parte do seu presente, ache!! (ta moleza)</p>
+        <div class="baloes">
+            <div class="balao" onclick="clicarBalao(this)"></div>
+            <div class="balao" onclick="clicarBalao(this)"></div>
+            <div class="balao" onclick="clicarBalao(this)"></div>
+            <div class="balao" onclick="clicarBalao(this)"></div>
+            <div class="balao" onclick="clicarBalao(this)"></div>
+        </div>
+    </section>
+
+
+    
+    <div class="surprise-message" onmouseover="mostrarMensagemSurpresa(this)">
+        🎈 Clique ou passe o mouse!
+    </div>
+    
+
+    <script src="script.js"></script>
+
+
+</body>
+</html>
